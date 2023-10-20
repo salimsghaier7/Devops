@@ -13,5 +13,10 @@ pipeline {
                 }
             } 
         }
+         stage('Clean') {
+            steps {
+                sh 'mvn clean'
+            }
+        }
     }
 }
